@@ -1,0 +1,57 @@
+main.js
+
+// listener for decrement
+    // document.querySelector('header .decrement').addEventListener('click', () => {
+    //     // decrement counter
+
+
+    //     fetch(baseApiUrl + '/decrement')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             updateCounterDOM(data.counterValue)
+    //         })
+
+    // })
+
+index.js
+
+//app.get('/decrement', (req, res) => {
+
+//    READ JSON FROM ROM
+//    const jsonString = fs.readFileSync('./db.json', 'UTF-8');
+//    const data = JSON.parse(jsonString);
+
+
+//    UPDATE DATA ON RAM
+//    data.counterValue -= 1;
+
+//    WRITE BACK THE DATA TO ROM
+//    fs.writeFileSync('./db.json', JSON.stringify(data))
+
+//    res.json(data);
+
+//})
+
+ //listener for reset
+    document.querySelector('header .reset').addEventListener('click', () => {
+        // decrement counter to 0
+
+
+        fetch(baseApiUrl + '/reset')
+            .then(res => res.json())
+            .then(data => {
+                updateCounterDOM(data.counterValue)
+            })
+
+    })
+
+
+
+     let contrast = getContrastRatio('#fff', 'red');
+                console.log(contrast);
+                if (contrast <) {
+
+                }
+
+                document.querySelector('main').style.backgroundColor = data.color;
+                document.querySelector('main').style.color = "#fff";
